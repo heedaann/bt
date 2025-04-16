@@ -16,7 +16,7 @@
         body {
             background-color: #0a131b;
             color: white;
-            height: 80vh;
+            height: 110vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -163,7 +163,6 @@
             min-height: 64px;
             outline: none;
             overflow: visible;
-            padding: 19px 26px;
             pointer-events: auto;
             position: relative;
             text-decoration: none;
@@ -275,7 +274,7 @@
                     </div>
                 </a>
             </div>
-            <input type="text" class="link-input" id="link-input" placeholder="Введите ссылку с словом 'mines'">
+            <input type="text" class="link-input" id="link-input" placeholder="Введите ссылку на вашу игру...">
             <div class="mines-selector" id="mines-selector">
                 <div class="mine-option active" data-mines="3">3</div>
                 <div class="mine-option" data-mines="5">5</div>
@@ -372,7 +371,7 @@
             const link = linkInput.value;
             
             if (!link.toLowerCase().includes('mines')) {
-                alert('Некорректная ссылка!"');
+                alert('Некорректная ссылка!');
                 return;
             }
     
